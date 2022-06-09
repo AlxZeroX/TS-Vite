@@ -29,7 +29,7 @@ taskForm?.addEventListener("submit", (e) => {
   title.focus();
 
   Toastify({
-    text: "Task Saved",
+    text: "Tarea agregada",
   }).showToast();
 });
 
@@ -55,7 +55,7 @@ function renderTasks(tasks: Task[]) {
     header.append(title);
 
     const btnDelete = document.createElement("button");
-    btnDelete.innerText = "delete";
+    btnDelete.innerText = "Borrar";
     btnDelete.className = "bg-red-500 px-2 py-1 rounded-md";
     header.append(btnDelete);
 
