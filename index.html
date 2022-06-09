@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/typescript-frontend-crud/assets/favicon.17e50649.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD Vite</title>
+  <script type="module" crossorigin src="/typescript-frontend-crud/assets/index.fb7dc270.js"></script>
+  <link rel="stylesheet" href="/typescript-frontend-crud/assets/index.631d88a2.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+  <!-- Task Form -->
+  <div class="flex justify-center items-center h-screen gap-x-2">
+    <form id="taskForm" class="bg-zinc-700 rounded-md p-10 max-w-md">
+      <h3 class="text-md mb-4 font-bold">Guardar Tarea</h3>
+      <label for="title" class="block">Título:</label>
+      <input type="text" name="title" class="bg-gray-800 px-1 py-2 rounded-md block mb-2 placeholder:px-2" autofocus
+        placeholder="Escribe el título" />
+
+      <label for="description" class="block">Descripción:</label>
+      <textarea name="description" rows="3" class="bg-gray-800 px-1 py-2 rounded-md block w-full mb-2 placeholder:px-2"
+        placeholder="Escribe la descripción de la tarea"></textarea>
+
+      <button class="bg-blue-600 px-3 py-1 rounded-md hover:bg-blue-700">Guardar</button>
+    </form>
+
+    <!-- Tasks List -->
+    <div id="tasksList" class="max-w-md w-full p-10 h-3/5 overflow-y-scroll"></div>
+  </div>
+
+  
+</body>
+
+</html>
